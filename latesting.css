@@ -1,157 +1,122 @@
 .letesting_list {
-  display: block;
-  margin-top: 6%;
-  margin-bottom: 20%;
+  margin-top: auto;
+  margin-top: 2%;
+  margin-bottom: 15%;
 }
-.letesting_list .title h4 {
-  font-size: 25px;
-  text-align: center;
+.letest_cards {
+  display: grid;
+  max-width: 100%;
+  margin-inline: auto;
+  padding-inline: 30px;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 60px;
 }
-.letesting_list .title h1 {
-  font-size: 50px;
-  text-align: center;
-}
-.latest_cards {
-  margin-top: 5%;
-}
-.card_animation{
-  position: relative;
-}
-.card_animation::before {
-  position: absolute;
-	top: 0;
-	left: -75%;
-	z-index: 2;
-	display: block;
-	content: '';
-	width: 50%;
-	height: 100%;
-	background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
-	background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
-	-webkit-transform: skewX(-25deg);
-	transform: skewX(-25deg);
-} 
-
-.card_animation:hover::before {
-	-webkit-animation: shine .75s;
-	animation: shine .75s;
-}
-@-webkit-keyframes shine {
-	100% {
-		left: 125%;
-	}
-}
-@keyframes shine {
-	100% {
-		left: 125%;
-	}
-}
-
-.latest_card {
-  display: inline-block;
+.letest_card {
   width: 450px;
   height: 250px;
   border-radius: 10px;
-  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
-  transition: 0.3s;
-  padding: 30px 50px;
-  background-color: white;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin-left: 32px;
 }
-.latest_card:hover {
-  cursor: pointer;
+.letest_card .img_box{
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    border-radius: 10px;
 }
-.card_tag {
-  background-color: rgb(247, 116, 138);
-  color: white;
-  position: absolute;
-  left: -30px;
-  top: -20px;
-  padding: 3px;
-  padding-left: 5px;
-  padding-right: 6px;
-  border-radius: 5px;
-}
-.save_button {
-  position: absolute;
-  top: -20px;
-  right: -20px;
-}
-.save_button a {
-  color: palevioletred;
-}
-.box_content {
-  transform: translateY(150px);
-  background-color: white;
-  padding: 20px;
-  padding-top: 5px;
-  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+.letest_card .img_box img {
   border-radius: 10px;
-}
-.box_content .img_box {
-  width: 100px; /* Adjust the width as needed */
-  height: 100px; /* Adjust the height as needed */
-  clip-path: circle(50%);
-  background-color: white;
-  overflow: visible;
-  transform: translateY(-50px);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.box_content .img_box::before {
-  content: "";
   width: 100%;
   height: 100%;
-  position: absolute;
+}
+.content_box {
+  background-color: white;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  border-radius: 10px;
+  transform: translateY(-80px);
+  margin: 20px;
+  height: 200px;
+}
+.content_box h2 {
+  color: gold;
+  font-size: 30px;
+  font-style: oblique;
+  font-family: Cursive;
+}
+.logo_box {
+  width: 120px;
+  height: 120px;
+  transform: translateY(-370px);
+  margin-left: 40px;
+}
+.logo_box img {
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
 }
+.content_box h2 {
+  padding-top: 50px;
+}
+.letest_cards:hover {
+  cursor: pointer;
+}
+.letest_card figure::before {
+  position: absolute;
+  top: 0;
+  left: -75%;
+  z-index: 2;
+  display: block;
+  content: "";
+  width: 50%;
+  height: 100%;
+  background: -webkit-linear-gradient(
+    left,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.3) 100%
+  );
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.3) 100%
+  );
+  -webkit-transform: skewX(-25deg);
+  transform: skewX(-25deg);
+}
 
-.box_content .img_box img {
-  width: 100%;
-  padding: 0;
+.letest_card figure:hover::before {
+  -webkit-animation: shine 0.75s;
+  animation: shine 0.75s;
 }
-.box_content .content_text {
-  margin-top: -30px;
+@-webkit-keyframes shine {
+  100% {
+    left: 125%;
+  }
 }
-.content_text h2 {
-  font-size: 25px;
+@keyframes shine {
+  100% {
+    left: 125%;
+  }
 }
-.content_text p {
-  font-size: 15px;
-  font-weight: 500;
-  color: rgb(58, 56, 56);
+@media screen and (max-width: 960px) {
+  .letesting_list {
+    width: 100%;
+  }
+  .letest_card {
+    width: 100%;
+    margin-bottom: 40%;
+
+  }
+  .letest_card figure::before{
+    left: -100%;
 }
-.content_text h3 {
-  font-size: 25px;
 }
+
 @media screen and (max-width: 600px) {
   .letesting_list {
     width: 100%;
   }
-  .letesting_list .title h4 {
-    font-size: 20px;
-    text-align: center;
+  .letest_card {
+    width: 100%;
+    margin-bottom: 25%;
   }
-  .letesting_list .title h1 {
-    font-size: 30px;
-    text-align: center;
-  }
-  .latest_card {
-    width: 90%;
-    margin-top: 25%;
-    margin-bottom: 38%;
-    margin-left: 20px;
-  }
-}
-@media screen and (max-width: 367px) {
-  .latest_card {
-    width: 90%;
-    margin-top: 25%;
-    margin-bottom: 42%;
-    margin-left: 20px;
-  }
+  
 }

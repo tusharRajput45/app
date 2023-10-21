@@ -9,7 +9,7 @@
   position: absolute;
   top: 25%;
   right: 5%;
-  border: 2px solid black;
+  border: 3px solid white;
   border-radius: 5px;
   padding: 20px;
   padding-bottom: 3%;
@@ -26,6 +26,11 @@
 .enquiry_form form {
   margin-bottom: 5%;
 }
+.form_input{
+  background-color: white;
+  padding: 8px;
+  border-radius: 5px;
+}
 
 .submit_btn {
   background-color: white;
@@ -33,25 +38,56 @@
   color: black; /* Text color added */
   border: none; /* Added */
   cursor: pointer; /* Added */
+  font-size: 20px;
+  padding: 8px;
 }
 
 .submit_btn:hover {
   background-color: black;
   color: white;
 }
-
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 1200px) {
   .enquiry_form {
-    display: block;
-    position: static;
-    width: 100%; /* Updated width */
-    padding: 40px; /* Updated padding */
+    width: 100%;
+    padding: 30px;
     padding-bottom: 3%;
     background-color: white;
     border: none;
     opacity: 1;
-    color: black; /* Text color added */
-    margin-right: 5%;
+    color: black;
+    margin: 0;
+    position:static;
+    margin-top: 10%;
+  }
+
+  .checkbox_text {
+    color: black;
+  }
+
+  .submit_btn {
+    background-color: black;
+    border-radius: 8px;
+    color: white;
+    border: none; /* Added */
+  }
+
+  .submit_btn:hover {
+    background-color: white;
+    color: black;
+  }
+}
+@media screen and (max-width: 850px) {
+  .enquiry_form {
+    width: 100%;
+    padding: 30px;
+    padding-bottom: 3%;
+    background-color: white;
+    border: none;
+    opacity: 1;
+    color: black;
+    margin: 0;
+    position:static;
+    margin-top: 60%;
   }
 
   .checkbox_text {
@@ -73,7 +109,6 @@
 
 @media screen and (max-width: 600px) {
   .enquiry_form {
-    display: block;
     width: 100%;
     padding: 30px;
     padding-bottom: 3%;
@@ -82,8 +117,13 @@
     opacity: 1;
     color: black;
     margin: 0;
+    position:static;
+    margin-top: 60%;
   }
+   .enquiry_form input{
+    border: 1px solid black;
 
+   }
   .checkbox_text {
     color: black;
   }

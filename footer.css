@@ -75,18 +75,35 @@ footer a {
 .head_office{
   margin-left: 15px;
 }
+@media screen and (max-width: 1100px) {
+  .widget-title {
+    font-size: 30px;
+    text-align: left;
+  }
+  address {
+    font-size: 25px;
+  }
+  .title_link {
+    font-size: 30px;
+  }
+  .link {
+    padding-left: 20px;
+    font-size: 20px;
+  }
+}
 @media screen and (max-width: 850px) {
   .footer-wrapper {
-    width: 850px;
+    width: 100%;
+    text-align: left;
   }
   .footer-widget-wrapper {
     padding-left: 30px;
   }
   .widget-title {
-    font-size: 35px;
+    font-size: 30px;
   }
   address {
-    font-size: 25px;
+    font-size: 20px;
   }
   .title_link {
     font-size: 35px;
@@ -94,8 +111,6 @@ footer a {
   .link {
     padding-left: 20px;
     font-size: 25px;
-  }
-  .footer-copyright-area {
   }
 }
 @media screen and (max-width: 600px) {

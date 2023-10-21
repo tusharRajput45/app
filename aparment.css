@@ -1,0 +1,233 @@
+body {
+  background-color: rgb(221, 206, 206);
+  max-width: 100%;
+}
+.grid_display {
+  padding-top: 10%;
+  width: 100%;
+  height: auto;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+.grid_display_img {
+  width: 80%;
+  margin: 0 auto;
+  line-height: 0;
+  position: relative;
+}
+.figure {
+  width: 100%;
+  padding: 0 40px 0 40px;
+}
+.figure h2 {
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 300;
+  letter-spacing: -2px;
+  margin: 0 auto;
+  line-height: 0;
+  text-align: left;
+  padding-left: 90px;
+  padding-right: 80px;
+}
+.figure p {
+  padding-left: 90px;
+  font-size: 18px;
+  margin-top: 30px;
+}
+.grid_display_img article {
+  width: 100%;
+  background: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 8px;
+}
+.grid_display_img article img {
+  width: 100%;
+  height: 100%;
+}
+.grid_display_img article img:hover {
+  cursor: pointer;
+  opacity: 0.6;
+  background-color: black;
+}
+.grid_display_img div {
+  height: 10.3vw;
+  color: white;
+}
+.grid_display_img div:nth-of-type(1) {
+  grid-column: 1 / 3;
+  grid-row: 1/3;
+  height: 21.3vw;
+}
+.grid_display_img div:nth-of-type(2) {
+  grid-row: 1;
+  grid-column: 3;
+}
+.grid_display_img div:nth-of-type(2) {
+  grid-row: 1;
+}
+.grid_display .nav {
+  width: 100%;
+  margin-top: 2%;
+}
+.grid_display .nav ul li {
+  list-style: none;
+  float: left;
+  padding: 10px;
+  margin-left: 90px;
+}
+.grid_display .nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+.description_container {
+  width: 100%;
+  margin-bottom: 5%;
+}
+.description_container .poperty_description {
+  width: 80%;
+  margin: 0 auto;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  background-color: white;
+  margin-top: 2%;
+  padding-bottom: 10px;
+}
+.description_container .title {
+  padding: 15px;
+}
+.description_container .title h3 {
+  font-size: 25px;
+  text-transform: uppercase;
+}
+.description_container .poperty_description .description_point {
+  padding-left: 15px;
+  line-height: 10px;
+}
+.description_container .poperty_description .description_point span {
+  font-size: 10px;
+  color: rgb(82, 78, 78);
+  padding-right: 5px;
+}
+.heading_decription {
+  text-transform: uppercase;
+}
+.more_details {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+.more_details a {
+  color: brown;
+  text-decoration: none;
+  font-weight: 800;
+}
+.disable_content_div {
+  width: 80%;
+  margin: 0 auto;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  background-color: white;
+  margin-top: 2%;
+  padding-bottom: 10px;
+}
+.content {
+  display: block;
+  overflow: hidden;
+  background-color: white;
+  transition: 10ms;
+}
+.disable_content {
+  padding: 20px;
+  color: black;
+}
+.disable_content a {
+  text-decoration: none;
+  color: black;
+}
+@media (max-width: 850px) {
+  .figure {
+    padding: 0;
+    display: none;
+  }
+  .grid_display_img div {
+    margin-top: 10px;
+    width: 100%;
+    height: 15vh;
+  }
+  .grid_display_img div:nth-of-type(1) {
+    height: 22vh;
+  }
+  .figure h2 {
+    font-size: 25x;
+    display: none;
+  }
+  .figure p {
+    display: none;
+  }
+  .grid_display_img {
+    width: 100%;
+    padding: 10px;
+  }
+  .grid_display_img article {
+    display: block;
+  }
+  .grid_display .nav {
+    width: 100%;
+    margin-top: 2%;
+  }
+  .grid_display .nav ul li {
+    list-style: none;
+    float: left;
+    padding: 10px;
+    margin-left: 0px;
+  }
+  .grid_display .nav ul li a {
+    text-decoration: none;
+    color: black;
+  }
+}
+@media (max-width: 600px) {
+  .figure {
+    padding: 0;
+    display: none;
+  }
+  .grid_display_img div {
+    margin-top: 10px;
+    width: 100%;
+    height: 15vh;
+  }
+  .grid_display_img div:nth-of-type(1) {
+    height: 22vh;
+  }
+  .figure h2 {
+    font-size: 25x;
+    display: none;
+  }
+  .figure p {
+    display: none;
+  }
+  .grid_display_img {
+    width: 100%;
+    padding: 10px;
+  }
+  .grid_display_img article {
+    display: block;
+  }
+  .grid_display .nav {
+    width: 100%;
+    margin-top: 2%;
+  }
+  .grid_display .nav ul li {
+    list-style: none;
+    float: left;
+    padding: 10px;
+    margin-left: 0px;
+  }
+  .grid_display .nav ul li a {
+    text-decoration: none;
+    color: black;
+  }
+}

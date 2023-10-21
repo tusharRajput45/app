@@ -1,20 +1,455 @@
-<link rel="stylesheet" href="latesting.css" />
-<link
-  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-  rel="stylesheet"
-  integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-  crossorigin="anonymous"
-/>
-<script
-  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-  crossorigin="anonymous"
-></script>
-<link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-  integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-  crossorigin="anonymous"
-  referrerpolicy="no-referrer"
-/>
+<head>
+  <title>Siya Properties</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="subPage.css" />
+  <link rel="stylesheet" href="navbar.css" />
+  <link rel="stylesheet" href="header.css" />
+  <link rel="stylesheet" href="footer.css" />
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+    crossorigin="anonymous"
+  />
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"
+  ></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+</head>
+<section>
+  <header class="header_nav">
+    <div class="row">
+      <div class="col-2 col1">
+        <div class="logo">
+          <img src="" alt="logo" />
+        </div>
+      </div>
+      <div class="col">
+        <ul class="desktop_ul">
+          <li>
+            <a href="#">Siya Properties</a>
+          </li>
+          <li>
+            <a href="#">Call us + 91 144 - 4512 - 458 </a>
+          </li>
 
+          <li>
+            <a href="#">Home</a>
+          </li>
+        </ul>
+        <ul class="mobile_ul">
+          <li class="">
+            <a href="#"><i class="fa-solid fa-bars"></i></a>
+          </li>
+          <li class="">
+            <a href="#"><i class="fa fa-phone"></i></a>
+          </li>
+          <li class="" onclick="openNav()">
+            <a href="#"><i class="fa-solid fa-bars"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+</section>
+<section class="nav_container" id="navbar">
+  <nav>
+    <div class="close" onclick="closeNav()">X</div>
+    <ul>
+      <li>
+        <a href="#">ABOUT US</a>
+      </li>
+
+      <li>
+        <a href="#">OUR PROJECT</a>
+        <!-- <div class="sub-nav-1">
+          <ul>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="#">DESTINATIONS</a></li>
+            <li><a href="#">OUR PROJECT</a></li>
+            <li><a href="#">About US</a></li>
+          </ul>
+        </div> -->
+      </li>
+      <li>
+        <a href="#">VILLA</a>
+      </li>
+
+      <li>
+        <a href="#">APARTMENTS</a>
+      </li>
+
+      <li>
+        <a href="#">RETAIL SHOP</a>
+      </li>
+
+      <li>
+        <a href="#">RENT TO OWN</a>
+      </li>
+
+      <li>
+        <a href="#">READY PROJECTS</a>
+      </li>
+      <li>
+        <a href="#">PROPERTY GUIDE</a>
+      </li>
+    </ul>
+  </nav>
+</section>
+<section class="subPage" >
+  <div class="row w-100">
+    <div class="col">
+      <div class="">
+        <h2
+          class="Villa_content"
+          style="
+            font-size: 35px;
+            font-weight: 400;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+              'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+          "
+        >
+          Villa
+        </h2>
+      </div>
+      <figure class="villa_box mt-3" id="figure1">
+        <div class="row">
+          <div class="col meal">
+            <figure class="meal-photo" id="img1">
+              <img
+                src="https://images.unsplash.com/photo-1550950158-d0d960dff51b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+              />
+            </figure>
+          </div>
+          <div class="col content">
+            <h5>DAMAC LAGOON - VILLA</h5>
+            <p>Damac Lagoons , Dubai</p>
+            <h4>ADE 1,490,000</h4>
+            <div class="row">
+              <div class="col">
+                <p>3 Bedrooms</p>
+              </div>
+              <div class="col">
+                <p>4 baths</p>
+              </div>
+              <div class="col">
+                <p>2,012 ft <sup>2</sup>size</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </figure>
+      <figure class="villa_box mt-3" id="figure1">
+        <div class="row">
+          <div class="col meal">
+            <figure class="meal-photo" id="img1">
+              <img
+                src="https://images.unsplash.com/photo-1550950158-d0d960dff51b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+              />
+            </figure>
+          </div>
+          <div class="col ">
+            <div class="content">
+              <h5>DAMAC LAGOON - VILLA</h5>
+              <p>Damac Lagoons , Dubai</p>
+              <h4>ADE 1,490,000</h4>
+              <div class="row">
+                <div class="col">
+                  <p>3 Bedrooms</p>
+                </div>
+                <div class="col">
+                  <p>4 baths</p>
+                </div>
+                <div class="col">
+                  <p>2,012 ft <sup>2</sup>size</p>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </figure>
+      <figure class="villa_box mt-3" id="figure1">
+        <div class="row">
+          <div class="col meal">
+            <figure class="meal-photo" id="img1">
+              <img
+                src="https://images.unsplash.com/photo-1550950158-d0d960dff51b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+              />
+            </figure>
+          </div>
+          <div class="col content">
+            <h5>DAMAC LAGOON - VILLA</h5>
+            <p>Damac Lagoons , Dubai</p>
+            <h4>ADE 1,490,000</h4>
+            <div class="row">
+              <div class="col">
+                <p>3 Bedrooms</p>
+              </div>
+              <div class="col">
+                <p>4 baths</p>
+              </div>
+              <div class="col">
+                <p>2,012 ft <sup>2</sup>size</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </figure>
+      <figure class="villa_box mt-3" id="figure1">
+        <div class="row">
+          <div class="col meal">
+            <figure class="meal-photo" id="img1">
+              <img
+                src="https://images.unsplash.com/photo-1550950158-d0d960dff51b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+              />
+            </figure>
+          </div>
+          <div class="col content">
+            <h5>DAMAC LAGOON - VILLA</h5>
+            <p>Damac Lagoons , Dubai</p>
+            <h4>ADE 1,490,000</h4>
+            <div class="row">
+              <div class="col">
+                <p>3 Bedrooms</p>
+              </div>
+              <div class="col">
+                <p>4 baths</p>
+              </div>
+              <div class="col">
+                <p>2,012 ft <sup>2</sup>size</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </figure>
+      <figure class="villa_box mt-3" id="figure1">
+        <div class="row">
+          <div class="col meal">
+            <figure class="meal-photo" id="img1">
+              <img
+                src="https://images.unsplash.com/photo-1550950158-d0d960dff51b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+              />
+            </figure>
+          </div>
+          <div class="col content">
+            <h5>DAMAC LAGOON - VILLA</h5>
+            <p>Damac Lagoons , Dubai</p>
+            <h4>ADE 1,490,000</h4>
+            <div class="row">
+              <div class="col">
+                <p>3 Bedrooms</p>
+              </div>
+              <div class="col">
+                <p>4 baths</p>
+              </div>
+              <div class="col">
+                <p>2,012 ft <sup>2</sup>size</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </figure>
+    </div>
+    <div class="col-3 searching_col" style="margin-left: 30px">
+      <div class="searching_box box1" style="margin-top: 0">
+        <h6 class="text-dark">CHANGE YOUR CURRENCY</h6>
+        <hr style="border: 1px solid black" />
+        <select name="" id="" class="form-control w-100">
+          <option value="">AED</option>
+        </select>
+      </div>
+      <div class="searching_box box1">
+        <h6 class="text-dark">ADVANCED SEARCH</h6>
+        <hr style="border: 1px solid black" />
+        <select
+          name=""
+          id=""
+          class="form-control w-100"
+          style="border-radius: none"
+        >
+          <option value="">AED</option>
+        </select>
+        <select name="" id="" class="form-control w-100 mt-3">
+          <option value="">AED</option>
+        </select>
+        <div class="mt-3">
+          <p>Price Range :</p>
+          <p class="text-left">AED 0 to AED 7,000,000</p>
+          <div class="text-center">
+            <input type="range" name="" id="" class="w-100" />
+            <button class="w-100 mt-3 button">SUBMIT</button>
+          </div>
+        </div>
+      </div>
+      <div class="searching_box box1">
+        <h6 class="text-dark">CHANGE YOUR CURRENCY</h6>
+        <hr style="border: 1px solid black" />
+        <form action="">
+          <label for="" class="mt-3">Sale Price</label>
+          <input type="text" name="" id="" class="form-control" />
+          <label for="" class="mt-3">Percent Down</label>
+          <input type="text" name="" id="" class="form-control" />
+          <label for="" class="mt-3">Trem (Years)</label>
+          <input type="text" name="" id="" class="form-control" />
+          <label for="" class="mt-3">Interest Rate in %</label>
+          <input type="text" name="" id="" class="form-control" />
+          <div>
+            <button class="w-100 mt-3 button">CALCULATE</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="footer-wrapper">
+  <div
+    class="footer-widget-wrapper pt-80 pt-md-80 pt-sm-60 pb-70 pb-md-78 pb-sm-60"
+  >
+    <div class="container-fluid">
+      <div class="row mtm-44">
+        <!-- Start Single Widget Wrap -->
+        <div class="col-lg-3 col-md-6">
+          <div class="single-widget-wrap head_office" style="">
+            <h3 class="widget-title">Head Office</h3>
+            <div class="widget-body">
+              <div class="about-text">
+                <address>
+                  Behind Indian Oil Petrol Pump,<br />
+                  Morbi-Halwad Road, <br />
+                  State Highway No. 22,<br />
+                  Nichimandal, Morbi, <br />
+                  Gujarat - 363641<br />
+                </address>
+                <a
+                  href="https://goo.gl/maps/Hgk5XA3PV7Q6fEBB6"
+                  target="_blank"
+                  class="link"
+                >
+                  <span class="post-date"
+                    ><i class="fa fa-map-marker"></i> Get Direction
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Single Widget Wrap -->
+        <div class="col-lg-3 col-md-6">
+          <div class="single-widget-wrap">
+            <h3 class="widget-title">Contact Us</h3>
+            <div class="widget-body">
+              <div class="latest-blog-widget">
+                <div class="single-blog-item">
+                  <h3>
+                    <a href="javascript:void(0)" class="title_link"
+                      >Email Address</a
+                    >
+                  </h3>
+                  <span class="post-date text-white"
+                    ><i class="fa fa-envelope text-dark"></i>
+                    <a href="mailto:exports@simero.in" class="link">
+                      exports@simero.in</a
+                    >
+                  </span>
+                  <br />
+                  <span class="post-date text-white"
+                    ><i class="fa fa-envelope text-dark"></i>
+                    <a href="mailto:sales@simero.in" class="link">
+                      sales@simero.in
+                    </a></span
+                  >
+                  <br />
+                  <span class="post-date text-white"
+                    ><i class="fa fa-envelope text-dark"></i>
+                    <a href="mailto:purchase@simero.in" class="link">
+                      purchase@simero.in
+                    </a>
+                  </span>
+                  <br />
+                  <span class="post-date text-white"
+                    ><i class="fa fa-envelope text-dark"></i>
+                    <a href="mailto:hr@simero.in" class="link">
+                      hr@simero.in
+                    </a>
+                  </span>
+                </div>
+                <div class="single-blog-item">
+                  <h3>
+                    <a href="javascript:void(0)" class="title_link"
+                      >Contact Number</a
+                    >
+                  </h3>
+                  <span class="post-date"
+                    ><i class="fa fa-phone"></i
+                    ><a href="tel:+918141212000" class="link">
+                      +91 81412 12000
+                    </a></span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="single-widget-wrap">
+            <h3 class="widget-title">Links</h3>
+            <div class="widget-body">
+              <ul class="widget-list">
+                <li><a href="index.html" class="link">Home</a></li>
+
+                <li>
+                  <a href="product-inquiry" class="link">Project</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="single-widget-wrap">
+            <h3 class="widget-title">Explore Dubai</h3>
+            <div class="widget-body">
+              <div class="newsletter-widget-wrap">
+                <ul class="widget-list">
+                  <li><a href="" class="link">VILLA</a></li>
+
+                  <li>
+                    <a href="product-inquiry" class="link">APARTMENTS</a>
+                  </li>
+                </ul>
+                <div class="newsletter-form-wrap">
+                  <div class="mailchimp-alerts text-center">
+                    <div class="mailchimp-submitting"></div>
+                    <div class="mailchimp-success"></div>
+                    <div class="mailchimp-error"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Footer Widget Area -->
+  <!-- Start Footer Bottom Area -->
+  <div class="footer-bottom-area">
+    <div class="container-fluid">
+      <div class="row align-items-center">
+        <div class="col-md-6 col-sm-7 order-last">
+          <div class="footer-copyright-area mt-xs-10 text-center text-sm-start">
+            <p>Siya Properties 2023. All Rights Reserved.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
