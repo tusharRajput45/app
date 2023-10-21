@@ -1,14 +1,18 @@
 .project_container {
-    margin: auto;
+    margin:0 auto;
     width: 100%;
     margin-top: 5%;
     margin-bottom: 5%;
     padding: 2.8%;
+    text-align: center;
+  }
+  .project_container .project_content p{
+    padding: 20px 0px 0px 20;
   }
   .box {
     margin-top: 0px;
     display: inline-block;
-    width: 460px;
+    width: 400px;
     height: 300px;
     box-sizing: border-box;
     border-radius: 5px;

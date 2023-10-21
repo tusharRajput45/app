@@ -1,6 +1,30 @@
 .subPage .villa_box .content {
   margin-left: -30%;
 }
+@media (max-width: 850px) {
+  .similar_listing.listing {
+    width: 100%;
+  }
+  .listing {
+    width: 100%;
+    margin: 12px;
+  }
+  .similar_listing.listing .row .col {
+    width: 100%;
+  }
+  .listing .row .col .img_box img {
+    width: 100%;
+    height: 100%;
+  }
+  .listing .content {
+    padding: 0px;
+    margin-top: 0%;
+  }
+  .subPage .villa_box .content {
+    margin-left: 0;
+    margin: 0 10px 10px 10px;
+  }
+}
 @media (max-width: 600px) {
   .similar_listing.listing {
     width: 100%;

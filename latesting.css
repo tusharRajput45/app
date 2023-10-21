@@ -1,25 +1,24 @@
 .letesting_list {
   margin-top: auto;
-  margin-top: 2%;
   margin-bottom: 15%;
 }
 .letest_cards {
   display: grid;
   max-width: 100%;
   margin-inline: auto;
-  padding-inline: 30px;
+  padding-inline: 40px;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   gap: 60px;
 }
 .letest_card {
-  width: 450px;
+  width: 410px;
   height: 250px;
   border-radius: 10px;
 }
-.letest_card .img_box{
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 36px 0px,
+.letest_card .img_box {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 18px 0px,
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-    border-radius: 10px;
+  border-radius: 10px;
 }
 .letest_card .img_box img {
   border-radius: 10px;
@@ -29,7 +28,7 @@
 .content_box {
   background-color: white;
   padding: 20px;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 18px 0px,
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
   border-radius: 10px;
   transform: translateY(-80px);
@@ -103,11 +102,10 @@
   .letest_card {
     width: 100%;
     margin-bottom: 40%;
-
   }
-  .letest_card figure::before{
+  .letest_card figure::before {
     left: -100%;
-}
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -118,5 +116,4 @@
     width: 100%;
     margin-bottom: 25%;
   }
-  
 }
