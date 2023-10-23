@@ -6,7 +6,7 @@
   display: grid;
   max-width: 100%;
   margin-inline: auto;
-  padding-inline: 40px;
+  padding-inline:40px;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   gap: 60px;
 }
@@ -95,6 +95,23 @@
     left: 125%;
   }
 }
+@media screen and (max-width: 1300px) {
+  .letesting_list {
+    width: 100%;
+  }
+  .letest_card {
+    width: 100%;
+    margin-bottom: 40%;
+  }
+  .letest_cards{
+    padding-inline: 0;
+    padding-left: 10px;
+    padding-right: 20px;
+  }
+  .letest_card figure::before {
+    left: -100%;
+  }
+}
 @media screen and (max-width: 960px) {
   .letesting_list {
     width: 100%;
@@ -102,6 +119,11 @@
   .letest_card {
     width: 100%;
     margin-bottom: 40%;
+  }
+  .letest_cards{
+    padding-inline: 0;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   .letest_card figure::before {
     left: -100%;

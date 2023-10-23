@@ -11,7 +11,7 @@ body {
 }
 .subPage figure {
   background-color: white;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 18px 0px,
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 10px 0px,
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 .subPage figure img {
@@ -23,7 +23,7 @@ body {
 }
 .subPage figure .content {
   padding: 20px;
-  margin-left: 20px;
+  margin-left: -40px;
 }
 .meal-photo {
   width: 350px;
@@ -45,9 +45,15 @@ body {
   opacity: 1;
   transform: scale(1.03);
 }
+.subPage figure .content h4{
+   color: #ca9b34;
+}
+.subPage figure:hover .content h5{
+   color: #ca9b34;
+}
 .searching_box {
   background-color: white;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 18px 0px,
+  box-shadow: rgba(0, 0, 0, 0) 0px 5px 18px 0px,
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
   margin-top: 5%;
 }
@@ -67,24 +73,32 @@ body {
 .button:hover {
   background-color: black;
 }
-@media screen and (max-width: 960px) {
-  .subPage {
-    width: 100%;
-    padding: 0;
-  }
-  .meal-photo {
-    width: 100%;
-    margin: 0;
-    overflow: hidden;
-    background-color: #000;
-  }
-  .meal-photo img {
-    width: 100%;
-    height: 100%;
-  }
+.calculation_container {
+  display: none;
 }
 
-@media screen and (max-width: 600px) {
+.slider input[type="range"] {
+  -webkit-appearance: none !important;
+  width: 420px;
+  height: 2px;
+  background: #ca9b34;
+  border: none;
+  outline: none;
+}
+.slider input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none !important;
+  width: 20px;
+  height: 20px;
+  background: #ca9b34;
+  border: 2px solid #ca9b34;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.slider input[type="range"]::-webkit-slider-thumb:hover {
+  background: #ca9b34;
+}
+
+@media screen and (max-width: 960px) {
   .subPage {
     width: 100%;
     padding: 0;
@@ -105,10 +119,69 @@ body {
     font-size: 13px;
   }
   .searching_col {
-    display: none;
+    margin: 0 auto;
+  }
+  .meal-photo{
+    width: 100%;
   }
   .meal-photo img {
+    position: relative;
     width: 100%;
     height: 100%;
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s;
+  }
+  .subPage figure .content {
+    padding: 20px;
+    margin-left: 10px;
+  }
+  .searching_col {
+    width: 100%;
+    padding-bottom: 10%;
+  }
+  .searching_box {
+    width: 95%;
+    margin-left: 0;
+  }
+  .col-3{
+    all:inherit;
+  }
+}
+@media screen and (max-width: 600px) {
+  .subPage {
+    width: 100%;
+    padding: 0;
+    margin-top: 15%;
+    padding-left: 0%;
+  }
+  .subPage .villa_box {
+    width: 100%;
+    margin: 12px;
+  }
+  .Villa_content {
+    padding: 20px;
+  }
+  .subPage .villa_box .row .col {
+    max-width: 100%;
+  }
+  .subPage figure .content p {
+    font-size: 13px;
+  }
+  .searching_col {
+    margin: 0 auto;
+  }
+  .meal-photo{
+    width: 100%;
+  }
+  .meal-photo img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s;
+  }
+  .subPage figure .content {
+    padding: 20px;
+    margin-left: 10px;
   }
 }
